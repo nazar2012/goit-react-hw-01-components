@@ -1,14 +1,15 @@
 import FriendListItem from "../Friend/FriendListItem"
+import style from "./Friend.module.css"
 
 function FriendList({ friends }) {
     return (
-        <ul class="friend-list">
+        <ul className={style.friend_list}>
             {friends.map(friend => (
                 <FriendListItem
                     key={friend.id}
                     avatar={friend.avatar}
                     name={friend.name}
-                    isOnline={friend.isOnline}
+                    // isOnline={friend.isOnline}
                 />
             ))}
         </ul>

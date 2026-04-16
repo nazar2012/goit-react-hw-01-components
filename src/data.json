@@ -2,7 +2,7 @@
     {
         "id": "id-1",
         "label": ".docx",
-        "percentage": 22
+        "percentage": 32
     },
     {
         "id": "id-2",
@@ -18,10 +18,5 @@
         "id": "id-4",
         "label": ".psd",
         "percentage": 47
-    },
-    {
-        "id": "id-5",
-        "label": ".pdf",
-        "percentage": 10
     }
 ]

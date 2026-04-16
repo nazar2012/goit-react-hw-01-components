@@ -1,16 +1,18 @@
+import style from "./Friend.module.css"
+
 function FriendListItem({ avatar, name, isOnline }) {
     return (
-        <li class="item">
-            <span class="status">
+        <li className={style.item}>
+            {/* <span class="status">
                 {isOnline ? "Online" : "Offline"}
-            </span>
+            </span> */}
             <img
-                class="avatar"
+                className={style.avatar}
                 src={avatar}
                 alt="User avatar"
                 width="48"
             />
-            <p class="name">{name}</p>
+            <p className={style.name}>{name}</p>
         </li>
     )
 }

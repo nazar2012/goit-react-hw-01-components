@@ -1,13 +1,15 @@
+import style from "./Statistics.module.css"
+
 function Statistics({ title, stats }) {
     return (
-        <section class="statistics">
-            <h2 class="title">{title}</h2>
+        <section className={style.statistics}>
+            <h2 className={style.title}>{title}</h2>
 
-            <ul class="stat-list">
+            <ul className={style.stat_list}>
                 {stats.map(item => (
-                    <li class="item" key={item.id}>
-                        <span class="label">{item.label}</span>
-                        <span class="percentage">{item.percentage}%</span>
+                    <li className={style.item} key={item.id}>
+                        <span className={style.label}>{item.label}</span>
+                        <span className={style.percentage}>{item.percentage}%</span>
                     </li>
                 ))}
             </ul>
